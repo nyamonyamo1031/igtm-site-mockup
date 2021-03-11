@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+
+body {
+
+    font-size: 1.4rem;
+}
+/*--- button-wrap ---*/
+.button-wrap{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*--- button ---*/
+.button{
+    padding: 1.0rem 2rem;
+    margin: 0.5rem;
+    width: 100%;
+    max-width: 20rem;
+}
+
+
+/*--- header ---*/
+.header .header__nav{
+    display: none;
+}
+.header .header__inner{
+    padding: 1rem;
+}
+.header .header__sp-menu{
+    display: block;
+    height: 40px;
+    width: 45px;
+    border-top: solid 3px #000;
+    box-sizing: border-box;
+    border-bottom: solid 3px #000;
+    position: relative;
+}
+.header .header__sp-menu::after{
+    content: "";
+    width: 0;
+    display: block;
+    background: #000;
+    height: 3px;
+    top: 48%;
+    position: absolute;
+}
+.header .header__sp-menu::before{
+    content: "";
+    width: 100%;
+    display: block;
+    background: #000;
+    height: 3px;
+    top: 48%;
+    position: absolute;
+
+}
+.header .header__nav-list{
+    flex-direction: column;
+}
+.header .header__nav-list-item{
+    margin: 0;
+    text-align: right;
+}
+.header .header__nav-list-item + .header__nav-list-item {
+    border-top: 1px dotted #000;
+}
+.header .header__nav-link{
+    display: block;
+    padding: 1.5rem;
+}
+/*--- ハンバーガーメニューを押したら --- */
+.header .header__sp-menu-check:checked + .header__sp-menu{
+    border: solid 0px #000;
+}
+.header .header__sp-menu-check:checked + .header__sp-menu::after{
+    content: "";
+    width: 100%;
+    transform: translate(0,-50%) rotate(-45deg);
+}
+.header .header__sp-menu-check:checked + .header__sp-menu::before{
+    content: "";
+    transform: translate(0,-50%) rotate(45deg);
+}
+.header .header__sp-menu-check:checked + .header__sp-menu + .header__nav{
+    display: block;
+    position: absolute;
+    top: 100%;
+    background: #fff;
+    width: 100%;
+    left: 0;
+}
+
+
+/*-- .main-visual ---*/
+.main-visual .main-visual__inner{
+    flex-direction: column;
+}
+
+.main-visual .main-visual__tilte{
+    font-size: 4rem;
+
+}
+.main-visual .main-visual__iamge{
+    max-width: 700px;
+    width: 100%;
+    flex: 1;
+    min-width: 100%; 
+}
+.main-visual .main-visual__message {
+    margin-bottom: 2.4rem;
+}
+.main-visual .main-visual__message p{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/*--- contents ---*/
+.top-contents{
+    padding: 2rem;
+}
+.top-contents .top-contents__title{
+    font-size: 2.4rem;   
+    margin-bottom: 2rem;
+    width: 100%;
+}
+.top-contents .top-contents__title-eng{
+
+    font-size: 4rem;
+}
+.top-contents .top-contents__title-jp{
+    margin-top: -2.5rem;
+
+}
+
+
+/*---  skill ---*/
+.skill .skill__list{
+    flex-direction: column;
+
+}
+.skill .skill__list-item{
+    width: 100%;
+    margin-bottom: 4rem;
+    margin: 0 auto 4rem;
+}
+.skill .skill__list-item p{
+    text-align: center;
+}
+
+ /*--- person ---*/
+ .person{
+    padding: 4rem 2rem 6rem;
+ }
+.person .person__inner{
+    flex-direction: column;
+}
+.person .person__message{
+    font-size: 1.4rem;
+    padding: 2rem;
+    margin: -3rem -1rem 0 0;
+}
+.person .person__image img{
+    width: 100%;
+    box-shadow:-10px -10px 0px 5px #a3a3c2
+}
+
+.contact .contact__item{
+    flex-direction: column;
+}
+.contact .contact__title{
+    width: 100%;
+    text-align: left;
+    padding: 0 1.4rem 0 0 ;
+}
