@@ -8,7 +8,6 @@ html {
 "Josefin Sans","YuGothic","游ゴシック","Hiragino Kaku Gothic ProN","Hiragino Sans","Meiryo","sans-serif";
     font-size: 62.5%;
     height: 100%;
-
 }
 body {
     line-height: 1.5;
@@ -168,7 +167,7 @@ input[type="submit"]:hover{
 }
 .header .header__nav-link{
     color: #273233;
-    font-size: 2.0rem;
+    font-size: 1.8rem;
     font-weight: bold;
 }
 .header .header__sp-menu{
@@ -177,29 +176,51 @@ input[type="submit"]:hover{
 .header .header__sp-menu-check{
     display: none;
 }
-
+.header .header__icon{
+    font-size: 3rem;
+}
 /*---footer ---*/
 .footer{
     background: #273233;
+    color: #fff;
     padding: 2rem 0;
 }
 .footer .footer__inner{
 
 }
-
+.footer .footer__logo{
+    margin-bottom: 2rem;
+}
+.footer .footer__nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;margin-bottom: 2rem;
+}
 .footer .footer__nav-list-item{
     text-align: center;
-    margin-bottom: 2rem;;
+    
+    padding: 1rem;
 }
-
 .footer .footer__nav-link{
-
-    font-size: 2.0rem;
-    font-weight: bold;
     color: #fff;
 }
 .footer .footer__copylight{
     text-align: center;
+}
+.footer .footer__sns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer .footer__sns-item{
+    padding: 1rem 1.5rem;
+}
+.footer .footer__icon{
+    color: #fff;
+    font-size: 2.5rem;
+}
+.footer .footer__copylight{
+font-size: 1.4rem;
 }
 
 
@@ -230,8 +251,6 @@ input[type="submit"]:hover{
     position: relative;
     z-index: 1;
 }
-
-
 
 /*--- main-visual---*/
 .main-visual{
@@ -298,25 +317,50 @@ input[type="submit"]:hover{
     margin-bottom: 4rem;
     margin: 0 2rem 4rem;
     border: 1px solid #ccc;
-    padding: 2rem 1.5rem;
+    padding: 2rem;
     box-sizing: border-box;
-    box-shadow: 2px 2px 2px #ccc;
+    /*
+    border: 1px solid #afe0e4;
+    box-shadow: 2px 2px 2px #ccc; 
+    box-shadow: 4px 4px 0px 3px #afe0e4;
+    */
     border-radius: 10px;
     width: 100%;
+    
 }
 .skill .skill__icon{
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 .skill .skill__icon i{
-   font-size: 7rem;
+   font-size: 5rem;
+}
+.skill .skill__count{
+    text-align: center;
+    font-weight: bold;
+    color: #9dbbe2;
+}
+.skill .skill__count span{
+    font-size: 2.4rem;
 }
 .skill .skill__name{
     text-align: center;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     font-weight: bold;
-    margin-bottom: 1rem;
     letter-spacing: 2px;
+    position: relative;
+    margin-bottom: 3.5rem;
+}
+.skill .skill__name::before{
+    content: "";
+    background: #9dbbe2;
+    position: absolute;
+    height: 20px;
+    width: 1px;
+    bottom: 0;
+    left: 50%;
+    /* right: 0; */
+    transform: translate(-50%,100%);
 }
 .skill .skill__description{
     font-size: 1.4rem;
