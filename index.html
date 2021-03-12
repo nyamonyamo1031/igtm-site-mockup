@@ -11,14 +11,15 @@
     <link rel="stylesheet" href="./style_sp.css?=111" type="text/css" media="screen and (max-width:900px)">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-    <!--ここのディスクリプションを追加して見よう-->
+    <script src="./js/anime.min.js"></script>
+    <script src="./js/index.js"></script>
 </head>
 <body>
 <div class="page">
     <header class="header">
         <div class="header__inner">
             <div class="header__logo">
-                <img src="" alt="logo" title="logo">
+                <img src="./image/logo_01.png" alt="logo" title="logo">
             </div>
             <input type="checkbox" id="sp-menu" class="header__sp-menu-check">
             <label class="header__sp-menu" for="sp-menu"></label>
@@ -30,7 +31,7 @@
                          </a>
                      </li>
                      <li class="header__nav-list-item">
-                        <a href="" class="header__nav-link">
+                        <a href="" class="header__nav-link" id="www">
                              ポートフォリオ
                          </a>
                      </li>
@@ -64,8 +65,8 @@
                 <div class="main-visual__inner">
                 <!--ここに画像がきます。-->
                     <div class="main-visual__message">
-                        <h1 class="main-visual__tilte">生かした一言名台詞</h1>
-                        <p>生かした文章生かした文章生かした文章生かした文章生かした文章生かした文章生かした文章生かした文章</p>
+                        <h1 class="main-visual__tilte">WEB技術で<br>ビジネス課題を解決</h1>
+                        <p>WEBサイトの作成とWEBサービスの開発を手掛けあなたのビジネス課題を一緒に解決致します。<br></p>
                         <div class="button-wrap button-wrap--row">
                             <a href="" class="button bouttn--black">ポートフォリオ</a>
                             <a href=""  class="button bouttn--pink">お問い合わせ</a>
@@ -139,15 +140,17 @@
         </div>
         <div class="top-contents person">
             <div class="person__inner">
+                <!--
                 <div class="person__image">
                     <img src="./image/about.png" alt="">
-                </div>
+                </div>-->
                 <div class="person__message">
                     <h2 class="top-contents__title">
-                        <div class="top-contents__title-eng">PERSON</div>
-                        <div class="top-contents__title-jp">私という人間</div>
+                        <div class="top-contents__title-eng">ABOUT</div>
+                        <div class="top-contents__title-jp">私について</div>
                     </h2>
-                    <p>どんなことをしていきたいか、どんな思いがあるか。などなどどんなことをしていきたいか、どんな思いがあるか。などなどどんなことをしていきたいか、どんな思いがあるか。などなどどんなことをしていきたいか、どんな思いがあるか。などなどどんなことをしていきたいか、どんな思いがあるか。などなど</p>
+                    <p>Vue/Nuxt/サイトコーディング/ Wordpress構築/ 現在0歳児育児しながら夫婦でweb制作&開発/産後の肉体改造中 / webエンジニアなのに手書き練習中/ イラスト初心者上達記録や、WEB関係の備忘録書いていく予定です/ 
+                         お仕事のご依頼はお問い合わせよりお願い致します。</p>
                 </div>
             </div>
         </div>
@@ -183,7 +186,7 @@
     <footer class="footer">
         <div class="footer__inner">
             <div class="footer__logo">
-                <img src="" width="400" alt="logo" title="logo">
+                <img src="./image/logo_01.png" width="400" alt="logo" title="logo">
             </div>
             <div class="footer__nav">
                 <ul class="footer__nav-list">
@@ -232,6 +235,7 @@
         </div>  
     </footer>
 
-</div>    
+</div> 
+ 
 </body>
 </html>

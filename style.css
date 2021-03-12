@@ -158,6 +158,9 @@ input[type="submit"]:hover{
     justify-content: space-between;
     padding: 2rem 0;
 }
+.header .header__logo img{
+    width: 90px;
+}
 .header .header__nav-list{
     display: flex;
     align-items: center;
@@ -267,7 +270,7 @@ font-size: 1.4rem;
 }
 
 .main-visual .main-visual__message{
-    max-width: 70rem;
+    max-width: 76rem;
     width: 100%;
     padding: 0 2rem 0 0;
     box-sizing: border-box;
@@ -384,19 +387,20 @@ font-size: 1.4rem;
 .person .person__image img{
     max-width: 50rem;
     width: 100%;
-    border-radius: 20px;
-    box-shadow: -20px -20px 0px 8px #afe0e4;
+    border-radius: 10px;
+    box-shadow: -10px -10px 0px 4px #afe0e4;
 }
 
 .person .person__message{
-    padding:  2rem 2rem 4rem;
+    padding: 2rem 2rem 4rem;
     background: #fff;
-    border-radius: 20px;
-    max-width: 50rem;
-    margin-bottom: -8rem;
-    margin-left: -5rem;
+    border-radius: 10px;
+    max-width: 100rem;
+    /* margin-bottom: -8rem; */
+    /* margin-left: -5rem; */
     box-sizing: border-box;
-    flex: 1;
+    max-width: 84rem;
+
 }
 
 
