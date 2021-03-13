@@ -26,7 +26,7 @@ body {
     display: none;
 }
 .header .header__inner{
-    padding: 1rem;
+    padding: 1.5rem;
 }
 .header .header__sp-menu{
     display: block;
@@ -62,12 +62,18 @@ body {
 .header .header__nav-list-item{
     margin: 0;
     text-align: right;
+    width: 100%;
 }
 .header .header__nav-list-item + .header__nav-list-item {
     border-top: 1px dotted #000;
 }
 .header .header__nav-link{
     display: block;
+    padding: 1.5rem;
+}
+
+
+.header .header__icon{
     padding: 1.5rem;
 }
 /*--- ハンバーガーメニューを押したら --- */
@@ -92,6 +98,14 @@ body {
     left: 0;
 }
 
+/*--- .footer ---*/
+.footer .footer__nav-list{
+    flex-direction: column-reverse;
+    margin-bottom: 0;
+}
+.footer .footer__nav-list-item{
+
+}
 
 /*-- .main-visual ---*/
 .main-visual .main-visual__inner{
@@ -151,7 +165,7 @@ body {
 
  /*--- person ---*/
  .person{
-    padding: 4rem 2rem 6rem;
+    padding: 4rem 2rem;
  }
 .person .person__inner{
     flex-direction: column;
@@ -159,13 +173,9 @@ body {
 .person .person__message{
     font-size: 1.4rem;
     padding: 2rem;
-    margin: -3rem -1rem 0 0;
-}
-.person .person__image img{
-    width: 100%;
-    box-shadow:-10px -10px 0px 5px #a3a3c2
 }
 
+ /*--- contact ---*/
 .contact .contact__item{
     flex-direction: column;
 }

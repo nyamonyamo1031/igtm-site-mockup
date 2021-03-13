@@ -140,6 +140,10 @@ input[type="submit"]:hover{
     background: linear-gradient(transparent 75%, #afe0e4 75%);
 }
 
+/*--- page ---*/
+.page{
+
+}
 
 /*--- header ---*/
 .header{
@@ -156,7 +160,10 @@ input[type="submit"]:hover{
     margin: 0 auto;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 0;
+    padding: 2rem;
+}
+.header a{
+    display: block;
 }
 .header .header__logo img{
     width: 90px;
@@ -186,7 +193,7 @@ input[type="submit"]:hover{
 .footer{
     background: #273233;
     color: #fff;
-    padding: 2rem 0;
+    padding: 4rem 2rem;
 }
 .footer .footer__inner{
 
@@ -225,7 +232,25 @@ input[type="submit"]:hover{
 .footer .footer__copylight{
 font-size: 1.4rem;
 }
+.footer .footer__logo img {
+    width: 113px;
+}
 
+/*--- contents ---*/
+.to-top{
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    height: 50px;
+    width: 50px;
+    box-sizing: border-box;
+    background: #FE657F;
+    font-size: 3rem;
+    text-align: center;
+    padding: 0.5rem 0 0 0;
+    color: #fff;
+    border-radius: 5px;
+}
 
 /*--- contents ---*/
 .top-contents{
