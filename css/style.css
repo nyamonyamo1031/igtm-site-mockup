@@ -173,8 +173,9 @@ input[type="submit"]:hover{
     display: flex;
     align-items: center;
 }
-.header .header__nav-list-item{
-    margin: 0 1rem;
+
+.header .header__nav-list-item + .header__nav-list-item{
+    margin-left: 4rem;
 }
 .header .header__nav-link{
     color: #273233;
@@ -187,9 +188,20 @@ input[type="submit"]:hover{
 .header .header__sp-menu-check{
     display: none;
 }
+.header .header__sns{
+    display: flex;
+}
+.header .header__sns-item{
+
+}
+.header .header__sns-item + .header__sns-item {
+    margin-left: 2rem;
+}
 .header .header__icon{
     font-size: 3rem;
 }
+
+
 /*---footer ---*/
 .footer{
     background: #273233;
