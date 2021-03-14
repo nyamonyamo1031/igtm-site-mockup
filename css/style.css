@@ -4,8 +4,14 @@
 /*--共通部分--*/
 html {
     /*font-family: "Helvetica", "Century Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', Sans-Serif;*/
-    font-family:
-"Josefin Sans","YuGothic","游ゴシック","Hiragino Kaku Gothic ProN","Hiragino Sans","Meiryo","sans-serif";
+  /*  font-family:
+"Josefin Sans","YuGothic","游ゴシック","Hiragino Kaku Gothic ProN","Hiragino Sans","Meiryo","sans-serif";*/
+font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
     font-size: 62.5%;
     height: 100%;
 }
@@ -147,12 +153,13 @@ input[type="submit"]:hover{
 
 /*--- header ---*/
 .header{
-    background:#ffff99 ;
     position: relative;
     background-color: #fff;
     -webkit-box-shadow: 0 4px 6px 0 rgb(12 0 46 / 6%);
     box-shadow: 0 4px 6px 0 rgb(12 0 46 / 6%);
-    
+    position: fixed;
+    width: 100%;
+    height: 7.5rem;
 }
 .header .header__inner{
     display: flex;
@@ -285,6 +292,8 @@ font-size: 1.4rem;
     opacity: 0.55;
     color: #ccc;
     font-size: 7rem;
+    font-family:
+"Josefin Sans","YuGothic","游ゴシック","Hiragino Kaku Gothic ProN","Hiragino Sans","Meiryo","sans-serif";
 }
 
 .top-contents .top-contents__title-jp{
@@ -296,6 +305,7 @@ font-size: 1.4rem;
 /*--- main-visual---*/
 .main-visual{
     background: #f0f0f5;
+    padding-top:7.5rem;
 }
 
 .main-visual .main-visual__inner{
@@ -376,6 +386,8 @@ font-size: 1.4rem;
     text-align: center;
     font-weight: bold;
     color: #9dbbe2;
+    font-family:
+"Josefin Sans","YuGothic","游ゴシック","Hiragino Kaku Gothic ProN","Hiragino Sans","Meiryo","sans-serif";
 }
 .skill .skill__count span{
     font-size: 2.4rem;
