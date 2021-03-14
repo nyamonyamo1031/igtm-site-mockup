@@ -156,11 +156,12 @@ input[type="submit"]:hover{
 }
 .header .header__inner{
     display: flex;
-    max-width: 120rem;
+    max-width: 100rem;
     margin: 0 auto;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 2rem 4rem;
+    box-sizing: border-box;
 }
 .header a{
     display: block;
@@ -287,10 +288,11 @@ font-size: 1.4rem;
 
 .main-visual .main-visual__inner{
     display: flex;
-    max-width: 150rem;
+    max-width: 100rem;
     margin: 0 auto;
-    padding: 4rem 2rem;
+    padding: 4rem;
     align-items: center;
+    box-sizing: border-box;
     justify-content: center;
 }
 
@@ -301,13 +303,15 @@ font-size: 1.4rem;
     box-sizing: border-box;
 }
 .main-visual .main-visual__tilte{
-    font-size: 6rem;
+    font-size: 4.5rem;
     font-weight: bold;
     margin-bottom: 2rem;
+    line-height: 1.2;
 }
 .main-visual .main-visual__message p{
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 2rem;
+    line-height: 1.4;
 }
 .main-visual .main-visual__iamge{
     max-width: 700px;
@@ -333,25 +337,18 @@ font-size: 1.4rem;
 .skill .skill__list{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     max-width: 84rem;
-    margin:0 auto;
+    margin: 0 auto;
     width: 100%;
-
 }
 
 .skill .skill__list-item{
-    max-width: 24rem;
-    margin-bottom: 4rem;
-    margin: 0 2rem 4rem;
+    max-width: 25rem;
+    margin-bottom: 4.5rem;
     border: 1px solid #ccc;
     padding: 2rem;
     box-sizing: border-box;
-    /*
-    border: 1px solid #afe0e4;
-    box-shadow: 2px 2px 2px #ccc; 
-    box-shadow: 4px 4px 0px 3px #afe0e4;
-    */
     border-radius: 10px;
     width: 100%;
     
@@ -390,10 +387,11 @@ font-size: 1.4rem;
     /* right: 0; */
     transform: translate(-50%,100%);
 }
-.skill .skill__description{
-    font-size: 1.4rem;
+.skill .skill__description {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    font-feature-settings: "palt" 1;
 }
-
 
 /*--- person ---*/
 .person{
@@ -401,23 +399,12 @@ font-size: 1.4rem;
     padding: 8rem 4rem 12rem;
 }
 .person .person__inner{
-    margin:0 auto;
-    display: flex;
-    align-items: center;
-    justify-content:center;
-}
-.person .person__image {
 
 }
-.person .person__image img{
-    max-width: 50rem;
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: -10px -10px 0px 4px #afe0e4;
-}
+
 
 .person .person__message{
-    padding: 2rem 2rem 4rem;
+    padding:4rem;
     background: #fff;
     border-radius: 10px;
     max-width: 100rem;
@@ -425,7 +412,7 @@ font-size: 1.4rem;
     /* margin-left: -5rem; */
     box-sizing: border-box;
     max-width: 84rem;
-
+    margin:0 auto;
 }
 
 
@@ -435,7 +422,14 @@ font-size: 1.4rem;
     width: 100%;
 }
 
-
+.person .person__list{
+    list-style: outside;
+    font-weight:normal;
+    padding:0 2rem;
+}
+.person .person__list .person__list-item{
+    line-height: 1.7;
+}
 
 
 /*--- contact ---*/
